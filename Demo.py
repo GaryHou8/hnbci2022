@@ -28,7 +28,7 @@ def train_eeg():
 
     dataframe = pd.DataFrame({'TrialId': trial_id,
                               'Label': predict_label})
-    dataframe.to_csv("sample_submission1.csv", index=False, sep=',')
+    dataframe.to_csv("sample_submission.csv", index=False, sep=',')
 
 if __name__ == '__main__':
     train_eeg()
