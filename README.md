@@ -1,6 +1,8 @@
 # hnbci2022
 海南脑机接口竞赛基准算法Demo
 
+算法：CSP+SVM
+
 python第三方库版本
 
 mne             0.23.0
