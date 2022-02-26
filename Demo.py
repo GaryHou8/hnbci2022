@@ -11,9 +11,9 @@ def train_eeg():
     predict_label = []
     trial_id = [i for i in range(1, 1601)]
     for i in range(20):
-        train_data = np.load('train_data_' + file_id[i] + '.npy')
-        train_label = np.load('train_label_' + file_id[i] + '.npy')
-        test_data = np.load('test_data_' + file_id[i] + '.npy')
+        train_data = np.load('../input/hnubci2022dataset/train_data_' + file_id[i] + '.npy')
+        train_label = np.load('../input/hnubci2022dataset/train_label_' + file_id[i] + '.npy')
+        test_data = np.load('../input/hnubci2022dataset/test_data_' + file_id[i] + '.npy')
 
         b, a = signal.butter(8, [8 / 125, 30 / 125], 'bandpass')
         train_data = signal.filtfilt(b, a, train_data)
